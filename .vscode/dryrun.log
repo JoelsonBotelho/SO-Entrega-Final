@@ -1,0 +1,10 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/joelsonbotelho/Desktop/SO Entrega Final'
+gcc -Wall -g -pedantic -c commandlinereader.c
+gcc -Wall -g -pedantic -pthread -c contas.c
+gcc -Wall -g -pedantic -c banco.c
+gcc -o banco -pthread commandlinereader.o contas.o banco.o
+gcc -Wall -g -pedantic -c banco-terminal.c
+gcc -o banco-terminal commandlinereader.o banco-terminal.o
+make: Leaving directory '/home/joelsonbotelho/Desktop/SO Entrega Final'
+ 
